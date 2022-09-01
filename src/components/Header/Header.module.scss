@@ -1,0 +1,56 @@
+@import '../../scss/variables';
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    width: 100%;
+    background-color: $background;
+
+    padding: 0 30px;
+
+    border-bottom: 1px solid $border;
+
+    .search{
+        padding: 12px 24px;
+        gap: 22px;
+        
+        width: 288px;
+        height: 44px;
+        
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+
+        border:none;
+
+        display: flex;
+        align-items: center;
+
+        input{
+            background: rgba(255, 255, 255, 0);
+            width: 230px;
+            outline: none;
+            border:none;
+        }
+
+        input, input::placeholder{
+            font-family: $main-font;
+            font-weight: 500;
+            font-size: 13.3125px; 
+            line-height: 17px;
+            color: rgba(255, 255, 255, 0.75);
+        }
+    }
+
+     
+
+    nav{
+        display: flex;
+        align-items: center;
+
+        img{
+            margin-left: 48px;
+        }
+    }
+}
