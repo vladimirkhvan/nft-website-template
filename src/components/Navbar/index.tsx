@@ -21,7 +21,7 @@ export const Navbar: React.FC = () => {
     const [isDark, setIsDark] = React.useState(false);
 
     return (
-        <div className={style.navbar}>
+        <nav className={style.navbar}>
             <div className={style.pills}>
                 <NavPill name="Dashboard" icon={dashboardImg} isActive={true} />
                 <NavPill name="Auctions" icon={auctionsImg} />
@@ -56,6 +56,6 @@ export const Navbar: React.FC = () => {
                     </span>
                 </div>
             </div>
-        </div>
+        </nav>
     );
 };

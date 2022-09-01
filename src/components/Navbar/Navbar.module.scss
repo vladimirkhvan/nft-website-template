@@ -12,6 +12,8 @@
     align-items: center;
     padding-top: 115px;
 
+    border-right: #3f444e 1px solid;
+
     .pills {
         width: 220px;
 
@@ -49,6 +51,7 @@
                 height: 36px;
                 background: #3f444e;
                 border-radius: 10px;
+                border:none;
 
                 color: $white;
                 font-size: 30px;
@@ -126,17 +129,15 @@
                 height: 10px;
                 border-radius: 50%;
                 position:absolute;
-                transform: translateY(30%);
-                left: 5px;
+                transform: translateY(30%) translateX(5px);
 
-                transition: right 0.1s ease-in-out, left 0.1s ease-in-out;
+                transition: transform 0.1s ease-in-out;
             }
         }
 
         .active{
             .ball{
-                right: 5px;
-                left: auto;
+                transform: translateY(30%) translateX(20px);
             }
         }
     }
