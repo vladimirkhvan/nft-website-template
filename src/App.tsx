@@ -7,9 +7,15 @@ import { Header } from './components/Header';
 
 function App() {
     return (
-        <div className={style.main}>
+        <div className={style.app}>
             <Navbar />
-            <Header />
+            <main>
+                <Header />
+                <section>
+                    <section className={style.body}></section>
+                    <section className={style.sidebar}></section>
+                </section>
+            </main>
         </div>
     );
 }
