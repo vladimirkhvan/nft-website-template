@@ -18,7 +18,7 @@ import settingsImg from '../../assets/images/settings.svg';
 import darkmodeImg from '../../assets/images/darkmode.svg';
 
 export const Navbar: React.FC = () => {
-    const [isDark, setIsDark] = React.useState(false);
+    const [isDark, setIsDark] = React.useState<boolean>(false);
 
     return (
         <nav className={style.navbar}>
