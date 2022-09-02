@@ -5,6 +5,8 @@ import style from './App.module.scss';
 import { Navbar } from './components/Navbar';
 import { Header } from './components/Header';
 
+import { Body } from './components/Body';
+
 function App() {
     return (
         <div className={style.app}>
@@ -12,7 +14,7 @@ function App() {
             <main>
                 <Header />
                 <section>
-                    <section className={style.body}></section>
+                    <Body />
                     <section className={style.sidebar}></section>
                 </section>
             </main>
